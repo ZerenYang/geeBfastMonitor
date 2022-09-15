@@ -656,9 +656,9 @@ var Timecox = timeOfCvx.arrayReduce("max", [imageAxis]);
 var firsttChab = firsttCha.arrayReduce('max', [imageAxis]);
 
 
-var Cnk1 = cox.mask(cox.arrayGet([0,0]).neq(0)).toArray();
-var timeCnk1 = Timecox.mask(Timecox.arrayGet([0,0]).neq(0)).toArray();
-var firtsChnk = firsttChab.mask(firsttChab.arrayGet([0,0]).neq(0)).toArray();
+var Cnk1 = cox.toArray();
+var timeCnk1 = Timecox.toArray();
+var firtsChnk = firsttChab.toArray();
 var firstCha = firtsChnk.subtract(criticalBorder1);
 
 ///... flatten the array to allow for use of palletes
